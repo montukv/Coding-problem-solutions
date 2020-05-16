@@ -20,21 +20,58 @@ Input: 1->1->2->3->3
 Output: 1->2->3'''
 
 
-def deleteDuplicates(self, head: ListNode) -> ListNode:
-    if head == None:
-        return head
-    
-    prev = head
-    curr = head.next
-    
-    
-    
-    while curr != None:
-        if prev.val == curr.val:
-            prev.next = curr.next
-            curr = curr.next
-        else :
-            curr = curr.next
-            prev = prev.next
-    
-    return head
+class node:
+    def __init__ (self,data= None):
+        self.data = data
+        self.next = None
+
+
+class linked:
+    def __init__ (self):
+        self.head = node()      
+
+    def accept(self,data):          
+        new_node = node(data)
+        cur = self.head
+        while cur.next != None:
+            cur = cur.next
+        cur.next = new_node
+        
+
+    def deleteDuplicates(self) :
+        head = self.head
+        if head == None:
+            return head
+        
+        prev = head
+        curr = head.next
+        
+        while curr != None:
+            if prev.data == curr.data:
+                prev.next = curr.next
+                curr = curr.next
+            else :
+                curr = curr.next
+                prev = prev.next
+        
+        
+
+    def display(self):
+        disp = []
+        cur = self.head
+        while cur.next != None :
+            cur = cur.next
+            disp.append(cur.data)
+        print(disp)
+
+
+l_list = linked()       
+s = input("enter the size of linked list")
+for i in range(int(s)):
+        l_list.accept(input())
+l_list.deleteDuplicates()
+l_list.display()
+        
+
+
+
