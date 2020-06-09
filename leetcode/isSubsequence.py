@@ -27,6 +27,7 @@ Constraints:
 0 <= t.length <= 10^4
 Both strings consists only of lowercase characters.
 Python3	
+'''
 def isSubsequence(self, s: str, t: str) -> bool:
         k = 0
         if len(s) == 0:
@@ -35,24 +36,4 @@ def isSubsequence(self, s: str, t: str) -> bool:
             if s[k] == t[i]:
                 k+=1
         return k == len(s)
-        
-1'''
-class Solution:
-2
-    def isSubsequence(self, s: str, t: str) -> bool:
-3
-        k = 0
-4
-        if len(s) == 0:
-5
-            return True
-6
-        for i in range(len(t)):
-7
-            if s[k] == t[i]:
-8
-                k+=1
-9
-        return k == len(s)
-10
-        
+ 
