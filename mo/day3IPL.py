@@ -5,4 +5,4 @@ for i in range(t):
     if(p<m):
         print(0)
     else:
-        print(p-m)
+        print(" ",p-m)
