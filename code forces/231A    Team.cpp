@@ -72,7 +72,8 @@ int main() {
 	return 0;
 }
 /*
-int mpow(int base, int exp) {
+int mpow(int base, int exp)
+{
   base %= mod;
   int result = 1;
   while (exp > 0) {
