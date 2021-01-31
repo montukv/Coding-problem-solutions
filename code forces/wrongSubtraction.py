@@ -1,4 +1,4 @@
-num ,k = 1000000000 ,9
+num ,k = 1000000000 , 9
 
 for i in range(int(k)):
 	if num%10 == 0 :
