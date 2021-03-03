@@ -1,4 +1,5 @@
-/*Union of two arrays
+/*
+Union of two arrays
 Basic Accuracy: 52.81% Submissions: 11434 Points: 1
 Given two arrays A and B of size N and M respectively. The task is to find union between these two arrays.
 
