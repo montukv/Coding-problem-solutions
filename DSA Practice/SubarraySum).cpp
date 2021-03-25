@@ -1,5 +1,4 @@
 /*
-
 Subarray with 0 sum 
 Easy Accuracy: 49.91% Submissions: 25431 Points: 2
 Given an array of positive and negative numbers. Find if there is a subarray (of size at-least one) with 0 sum.
