@@ -25,3 +25,7 @@ def countSortAlgo(a,n):
 
 arr = [10, 14, 28, 11, 7, 16, 30, 50, 25, 18]
 countSortAlgo(arr,len(arr))
+
+
+
+#time complexity O(max(Ai,n))
