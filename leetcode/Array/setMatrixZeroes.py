@@ -41,12 +41,38 @@ def set_matrix_zeroes(matrix):
     return
 
 
-set_matrix_zeroes(matrix)
-set_matrix_zeroes(matrix2)
+# set_matrix_zeroes(matrix)
+# set_matrix_zeroes(matrix2)
 
+#Better Solution Time complexity n^2
 
+def set_matrix_to_zeroes(matrix):
+    row = []
+    col = []
 
-#Better Solution Time complexity
+    #creating array for tracking row and col which needs to be set to zero
+    for i in range(len(matrix)):
+        row.append(0) 
+    for i in range(len(matrix[0])):
+        col.append(0)
+
+    for i in range(len(matrix)):
+        for j in range(len(matrix[0])):
+            if matrix[i][j] == 0:
+                row[i] = 1
+                col[j] = 1
+
+    #mark zeros
+    for i in range(len(matrix)):
+        for j in range(len(matrix[0])):
+            if row[i] == 1 or col[j] == 1:
+                matrix[i][j] = 0
+    
+    print(matrix)
+    return
+
+set_matrix_to_zeroes(matrix)
+set_matrix_to_zeroes(matrix2)
 
 
 
