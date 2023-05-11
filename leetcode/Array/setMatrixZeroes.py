@@ -71,8 +71,7 @@ def set_matrix_to_zeroes(matrix):
     print(matrix)
     return
 
-set_matrix_to_zeroes(matrix)
-set_matrix_to_zeroes(matrix2)
 
-
-
+#uncomment below to test
+# set_matrix_to_zeroes(matrix)
+# set_matrix_to_zeroes(matrix2)
